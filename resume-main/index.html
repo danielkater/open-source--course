@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f7fa" />
+    <meta name="description" content="凡亚军的个人介绍网站。上海杉达学院计算机科学与技术专业大二学生。" />
+    <title>凡亚军 · Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/site-mark.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳转到主要内容</a>
+    <header class="site-header" id="top">
+      <nav class="nav container" aria-label="主导航">
+        <a class="brand" href="#home" aria-label="凡亚军，返回首页"><span class="brand-mark" aria-hidden="true">FY.</span><span class="brand-name">凡亚军<span class="brand-dot">.</span></span></a>
+        <div class="nav-links" id="nav-links">
+          <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#awards">Awards</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="theme-toggle icon-button" id="theme-toggle" type="button" aria-label="切换深色模式" title="切换主题">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></svg>
+          </button>
+          <button class="menu-toggle icon-button" id="menu-toggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="home" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow hero-eyebrow"><span class="status-dot" aria-hidden="true"></span> PERSONAL WEBSITE</p>
+            <h1 id="hero-title">你好，我是<br /><span>凡亚军<span class="accent-dot">.</span></span></h1>
+            <p class="hero-role">Computer Science Student <span aria-hidden="true">/</span> 计算机科学与技术</p>
+            <p class="hero-intro">上海杉达学院大二学生，正在学习计算机科学与技术。这里记录我的学习、探索与未来的作品。</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">探索项目 <span aria-hidden="true">↗</span></a>
+              <!-- TODO: 提供 GitHub 个人主页地址后，将此按钮改为带 href 的 a 元素。 -->
+              <button class="button button-outline button-disabled" type="button" disabled title="TODO: 添加 GitHub 地址">GitHub <span aria-hidden="true">↗</span></button>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="portrait-frame">
+              <div class="portrait-placeholder" id="portrait-placeholder" aria-hidden="true"><span class="portrait-orbit orbit-one"></span><span class="portrait-orbit orbit-two"></span><span class="portrait-initials">FY</span><span class="portrait-note">PHOTO COMING SOON</span></div>
+              <img class="portrait-image" id="profile-image" alt="凡亚军的个人照片" hidden />
+            </div>
+          </div>
+        </div>
+        <div class="hero-bottom-line container" aria-hidden="true"></div>
+      </section>
+
+      <section class="section content-section" id="about" aria-labelledby="about-title"><div class="container section-grid reveal"><div class="section-label"><span class="section-number">01 /</span><span>ABOUT ME</span></div><div class="section-body"><p class="section-kicker">A LITTLE ABOUT ME</p><h2 id="about-title">保持好奇，<br /><em>持续构建。</em></h2><div class="about-layout"><p class="lead">我是凡亚军，上海杉达学院计算机科学与技术专业的大二学生。</p><div class="about-aside"><p>我正在积累专业知识，逐步把课堂所学转化为可以展示的作品。这个网站会随着学习和实践持续更新。</p><p class="todo-note">TODO · 可在这里补充真实的兴趣方向与个人介绍。</p></div></div></div></div></section>
+
+      <section class="section content-section section-tinted" id="skills" aria-labelledby="skills-title"><div class="container section-grid reveal"><div class="section-label"><span class="section-number">02 /</span><span>SKILLS</span></div><div class="section-body"><p class="section-kicker">TOOLS & LEARNING</p><h2 id="skills-title">技术与<span class="accent-text">学习</span></h2><p class="section-description">目前先展示这个网站实际使用的技术。个人技术方向将在确认后逐步补充。</p><div class="skill-grid"><article class="info-card skill-card"><span class="card-index">01 — THIS WEBSITE</span><h3>Technology Stack</h3><p>构建本站所使用的技术</p><div class="tag-list"><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span></div></article><article class="info-card skill-card"><span class="card-index">02 — IN PROGRESS</span><h3>Currently Learning</h3><p>持续更新的学习方向</p><div class="tag-list"><span class="tag tag-muted">TODO · 添加正在学习的技术</span></div></article></div></div></div></section>
+
+      <section class="section content-section" id="education" aria-labelledby="education-title"><div class="container section-grid reveal"><div class="section-label"><span class="section-number">03 /</span><span>EDUCATION</span></div><div class="section-body"><p class="section-kicker">MY BACKGROUND</p><h2 id="education-title">教育<span class="accent-text">经历</span></h2><article class="timeline-card"><div class="timeline-rail" aria-hidden="true"><span></span></div><div class="timeline-content"><span class="card-index">CURRENTLY STUDYING</span><h3>上海杉达学院</h3><p>计算机科学与技术 <span class="inline-divider" aria-hidden="true">/</span> 大二</p></div><span class="timeline-symbol" aria-hidden="true">↗</span></article></div></div></section>
+
+      <section class="section content-section section-tinted" id="awards" aria-labelledby="awards-title"><div class="container section-grid reveal"><div class="section-label"><span class="section-number">04 /</span><span>AWARDS</span></div><div class="section-body"><p class="section-kicker">MILESTONES</p><h2 id="awards-title">获得的<span class="accent-text">认可</span></h2><div class="awards-list"><article class="award-card"><div class="award-icon" aria-hidden="true">✳</div><div><span class="card-index">COMPETITION AWARD</span><h3>全国大学生数学竞赛</h3><p>三等奖</p></div><span class="award-arrow" aria-hidden="true">↗</span></article></div></div></div></section>
+
+      <section class="section content-section" id="projects" aria-labelledby="projects-title"><div class="container section-grid reveal"><div class="section-label"><span class="section-number">05 /</span><span>PROJECTS</span></div><div class="section-body"><p class="section-kicker">SELECTED WORK</p><div class="section-heading-row"><h2 id="projects-title">项目与<span class="accent-text">实践</span></h2><span class="section-counter">00 PROJECTS</span></div><div class="project-list" id="project-list"></div><div class="projects-empty" id="projects-empty"><div class="empty-symbol" aria-hidden="true"><span>⌘</span></div><div><span class="card-index">WORK IN PROGRESS</span><h3>Projects are coming soon.</h3><p>正在构建中……这里以后将展示我的个人项目、课程项目和开源项目。</p></div><span class="empty-arrow" aria-hidden="true">↗</span></div>
+        <!-- TODO: 复制下面 template 内的 article 到上方 #project-list；填入真实资料后删除 #projects-empty。 -->
+        <template id="project-card-template"><article class="project-card"><div class="project-screenshot"><img src="./assets/images/TODO-project-screenshot.jpg" alt="TODO: 项目截图说明" /></div><div class="project-details"><span class="card-index">TODO · 项目类别</span><h3>TODO · 项目名称</h3><p>TODO · 项目介绍</p><div class="tag-list"><span class="tag">TODO · 技术栈</span></div><div class="project-links"><a href="TODO-GITHUB-REPOSITORY-URL" target="_blank" rel="noopener noreferrer">GitHub Repository ↗</a><a href="TODO-DEMO-URL" target="_blank" rel="noopener noreferrer">Demo ↗</a></div></div></article></template>
+      </div></div></section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-inner reveal"><div class="section-label"><span class="section-number">06 /</span><span>CONTACT</span></div><div class="contact-main"><p class="section-kicker">LET'S CONNECT</p><h2 id="contact-title">保持<span>联系<span class="accent-dot">.</span></span></h2><p>如果你对我的学习和未来作品感兴趣，欢迎之后通过下方渠道联系我。</p><div class="contact-links"><span class="contact-link contact-disabled" aria-disabled="true" title="TODO: 添加邮箱地址">Email <span aria-hidden="true">↗</span><small>TODO · 添加邮箱</small></span><span class="contact-link contact-disabled" aria-disabled="true" title="TODO: 添加 GitHub 地址">GitHub <span aria-hidden="true">↗</span><small>TODO · 添加主页链接</small></span></div></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-inner"><span>© <span id="current-year"></span> 凡亚军</span><span>Designed to grow with every project.</span><a href="#top">返回顶部 ↑</a></div></footer>
+  </body>
+</html>

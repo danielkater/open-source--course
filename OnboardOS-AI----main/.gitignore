@@ -1,0 +1,24 @@
+node_modules/
+dist/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.sqlite3*
+.env
+.env.*
+!.env.example
+.envrc
+# Local credentials and private keys
+*.pem
+*.key
+credentials*.json
+secrets*.json
+.aws/
+.ssh/
+logs/
+.runtime.json
+test-results/
+playwright-report/
+.test-data/
+*.tsbuildinfo

@@ -1,0 +1,19 @@
+{
+  "version": "demo-1.0",
+  "notice": "虚构演示模板，仅用于流程模拟，不代表劳动法规或上海外服真实政策。",
+  "tasks": [
+    {"code":"offer","title":"Offer 确认","kind":"confirmation","owner":"candidate","dependencies":[],"description":"确认模拟 Offer，开始入职旅程。"},
+    {"code":"basic_docs","title":"基础材料","kind":"document","owner":"candidate","dependencies":["offer"],"description":"提交虚构个人资料表与学历证明演示材料。请勿上传真实个人信息。"},
+    {"code":"tripartite","title":"三方协议","kind":"document","owner":"candidate","dependencies":["offer"],"when":{"identity":"graduate"},"description":"应届毕业生模板增加的模拟三方协议。"},
+    {"code":"dispatch","title":"派遣用工协议","kind":"document","owner":"candidate","dependencies":["offer"],"when":{"employment":"dispatch"},"description":"劳务派遣模板增加的模拟派遣用工协议。"},
+    {"code":"materials_review","title":"材料汇总审核","kind":"review","owner":"hr","dependencies":["$documents"],"description":"所有材料逐项审核通过后，由 HR 人工确认材料完整性。"},
+    {"code":"background","title":"背景调查","kind":"service","owner":"external","dependencies":["offer"],"when":{"job_category":"executive"},"description":"上海外服模拟服务：中高管模板的背景调查，不调用任何真实调查系统。回传后需 HR 确认。"},
+    {"code":"medical","title":"体检服务协调","kind":"service","owner":"external","dependencies":["offer"],"description":"仅模拟预约协调与流程回执，不收集健康信息。回传后需 HR 确认。"},
+    {"code":"final","title":"最终入职确认","kind":"final","owner":"hr","dependencies":["materials_review","$services"],"description":"前置材料与服务全部人工确认完成后，由 HR 确认正式入职。"}
+  ],
+  "policies": {
+    "first_day": "演示报到指引：请于入职日 09:00 到模拟企业前台，准备已审核的演示材料清单，联系部门入职伙伴。具体安排应以企业 HR 人工通知为准。",
+    "materials": "演示材料规则：全部候选人提交基础材料；应届毕业生补充三方协议；劳务派遣补充派遣用工协议。提交不等于审批通过。",
+    "approval": "AI 只提供流程建议。材料、外服结果与最终入职均须 HR 人工确认。提醒只在本演示系统站内发送。"
+  }
+}
